@@ -25,7 +25,10 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.example.marsphotos.ui.MarsPhotosApp
 import com.example.marsphotos.ui.theme.MarsPhotosTheme
+import dagger.hilt.android.AndroidEntryPoint
+import kotlin.text.Typography.dagger
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
