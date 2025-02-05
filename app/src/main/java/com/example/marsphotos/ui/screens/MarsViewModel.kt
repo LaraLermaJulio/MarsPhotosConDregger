@@ -45,8 +45,7 @@ sealed interface MarsUiState {
 
 @HiltViewModel
 class MarsViewModel @Inject constructor(
-    private val marsPhotosRepository: MarsPhotosRepository
-) : ViewModel() {
+    private val marsPhotosRepository: MarsPhotosRepository) : ViewModel() {
     var marsUiState: MarsUiState by mutableStateOf(MarsUiState.Loading)
         private set
 
